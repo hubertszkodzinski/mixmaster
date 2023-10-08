@@ -1,4 +1,4 @@
 function Landing() {
-  return <div>Landing</div>;
+  return <h2>Landing</h2>;
 }
 export default Landing;
