@@ -21,7 +21,6 @@ function Navbar() {
     </Wrapper>
   );
 }
-
 export default Navbar;
 
 const Wrapper = styled.nav`
