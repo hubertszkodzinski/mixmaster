@@ -1,4 +1,4 @@
-import { useLoaderData, Link } from 'react-router-dom';
+import { useLoaderData, Link, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 
@@ -13,6 +13,10 @@ export const loader = async ({ params }) => {
 
 function Cocktail() {
   const { id, data } = useLoaderData();
+
+  // if (!data || !data.drinks) return <h2>something went wrong...</h2>;
+  if (!data || !data.drinks) return <Navigate to='/' />;
+
   const singleDrink = data.drinks[0];
 
   const {
@@ -76,7 +80,7 @@ export default Cocktail;
 const Wrapper = styled.div`
   header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     .btn {
       margin-bottom: 1rem;
     }
