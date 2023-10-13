@@ -4,7 +4,6 @@ import svg from '../assets/not-found.svg';
 
 function Error() {
   const error = useRouteError();
-  console.log(error);
 
   if (error.status === 404) {
     return (
@@ -22,6 +21,7 @@ function Error() {
       <div>
         <h3>something went wrong</h3>
       </div>
+      <Link to='/'>back home</Link>
     </Wrapper>
   );
 }
