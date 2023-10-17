@@ -15,7 +15,7 @@ function Cocktail() {
   const { id, data } = useLoaderData();
 
   // if (!data || !data.drinks) return <h2>something went wrong...</h2>;
-  if (!data || !data.drinks) return <Navigate to='/' />;
+  if (!data || !data?.drinks) return <Navigate to='/' />;
 
   const singleDrink = data.drinks[0];
 

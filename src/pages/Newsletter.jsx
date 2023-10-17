@@ -15,9 +15,9 @@ export const action = async ({ request }) => {
     console.log(error);
     toast.error(
       error?.response?.data?.msg ||
-        'Something went wrong. Please check if you provide all values.'
+        'something went wrong, please check if you provide all values'
     );
-    return null;
+    return error;
   }
 };
 
