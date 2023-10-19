@@ -9,6 +9,7 @@ export const action = async ({ request }) => {
   const data = Object.fromEntries(formData);
   try {
     const response = await axios.post(newsletterUrl, data);
+    console.log(response);
     toast.success(response.data.msg);
     return redirect('/');
   } catch (error) {
