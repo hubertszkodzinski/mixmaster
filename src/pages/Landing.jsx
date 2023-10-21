@@ -16,11 +16,13 @@ const searchCocktailsQuery = searchTerm => {
   };
 };
 
-export const loader = async ({ request }) => {
-  const url = new URL(request.url);
-  const searchTerm = url.searchParams.get('search') || '';
-
-  return { searchTerm };
+export const loader = queryClient => {
+  return async ({ request }) => {
+    const url = new URL(request.url);
+    const searchTerm = url.searchParams.get('search') || '';
+    await queryClient.ensureQueryData(searchCocktailsQuery(searchTerm));
+    return { searchTerm };
+  };
 };
 
 function Landing() {
