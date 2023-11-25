@@ -12,4 +12,7 @@ The user can subscribe to the newsletter, which I created using the Form compone
 
 ## Screenshots
 
-![App Screenshot](https://thumbs2.imgbox.com/97/21/7xgTYyih_t.png)
+![App Screenshot](https://i.imgur.com/m2qwGnq.png)
+![App Screenshot](https://i.imgur.com/km9zWvr.png)
+![App Screenshot](https://i.imgur.com/JHNQWeP.png)
+![App Screenshot](https://i.imgur.com/Wu7ijzg.png)
