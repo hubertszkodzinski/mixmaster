@@ -6,7 +6,7 @@ This application allows the user to search for information about the drink he is
 
 The user can subscribe to the newsletter, which I created using the Form component of React Router Dom and handled with the help of Action assigned to a specific page defined in my router, of course in an asynchronous way. To provide the user with data downloaded from the API better and more efficiently, I used the Loader from React Router Dom together with React Query.
 
-## Tech Stack
+## Core Tech Stack
 
 [![My Skills](https://skillicons.dev/icons?i=js,react,html,css)](https://skillicons.dev)
 
