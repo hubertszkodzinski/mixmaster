@@ -1,4 +1,4 @@
-# Mix Master
+# MixMaster
 
 This is the application where I thoroughly learned React Router Dom and consolidated my knowledge of React Query. Additionally, when creating this application, I used Axios, Styled Components and React Toastify. The API I was sending requests to was https://www.thecocktaildb.com/. 
 
